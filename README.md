@@ -119,8 +119,6 @@ express the same thing like this:
 
 #### `(stop-propagation)`
 
-> ⚠️ Not implemented yet.
-
 Calls [`event.stopPropagation()`][e-stoppropagation].
 
 Stops further propagation of the current event in the capturing phase (down the
