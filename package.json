@@ -1,6 +1,6 @@
 {
   "name": "ember-event-helpers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Complimentary event template helpers to the {{on}} modifier",
   "keywords": [
     "ember-addon",
