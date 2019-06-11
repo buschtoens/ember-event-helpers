@@ -761,16 +761,16 @@
     eslint-plugin-ember-best-practices "^1.1.1"
     lodash.merge "^4.6.1"
 
-"@clark/eslint-config-node@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.2.0.tgz#d38548e84f6149e0c726e3454fda9e016110246f"
-  integrity sha512-3UA9aLyWpp7ghCHN+xQz1PcxoEU1z+FE2HQ6fvfuqdLkgw3IBFXO661YM4yNYZiG7AC16n4UV10ZPKZw1NadtA==
+"@clark/eslint-config-node@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.2.1.tgz#2f876e913082a9c6de12b7b1debe00e05bb8f7fc"
+  integrity sha512-yVa9rmIr7F/CP2qeEFys9YmTJvBDFNBsfQPwsenf9F2o4j3WRUFigMYeQ9G7QI8UNfMo2LDASU8ROVEXkMoo0g==
   dependencies:
-    "@clark/eslint-config" "^1.2.0"
+    "@clark/eslint-config" "^1.2.1"
     eslint-plugin-node "^9.1.0"
     lodash.merge "^4.6.1"
 
-"@clark/eslint-config@^1.2.0", "@clark/eslint-config@^1.2.1":
+"@clark/eslint-config@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.2.1.tgz#ee2ea3c7cb6276964983e7f09c0d965bd6731e8b"
   integrity sha512-l8/FWWGnxPcopmWOqIXLvpgeIQjXUuGsb9P00umiOvn6CQCctzATOdoAYCM+qnPEaiI5p7ZUxqbxysNXdZTawQ==
