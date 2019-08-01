@@ -761,27 +761,27 @@
     eslint-plugin-ember-best-practices "^1.1.2"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config-node-order-imports@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.6.1.tgz#b5922fc26eb63ef392a7efdfed16f3514cb43084"
-  integrity sha512-XtFW6qyIKZajpep/LJ+CDjMbQPRnHrTFkZMzXlTKNU0q1W0ArNOOPnEhozGyCQ/EhIgEf3D/MHp2++8v9cWHdg==
+"@clark/eslint-config-node-order-imports@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.8.0.tgz#e8f4d300144824cc5a01b394450d930f3054fd1f"
+  integrity sha512-514IfLrii7e3b3DgkSUt5tag3smZuOjr7Ej2lJ9QBhCwaRdFcTcPClAxUFV5Z2iWlpY77GD3HuYXaWdPRQoyiQ==
   dependencies:
     eslint-plugin-import-helpers "^1.0.2"
 
-"@clark/eslint-config-node@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.6.1.tgz#929c727b1ec864fb1909a139acb23379fcf685d6"
-  integrity sha512-sky3AKZjJox7zJFkCx0zlvE74KVHVXDbFHMlq6MvDAuO8x8G59GkPhr7m8h4mO7IuDoBl1Bls1nh6vijeXjpAw==
+"@clark/eslint-config-node@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.8.0.tgz#7f4b6be726a8c70747cbf7988defc1aa861bf8b3"
+  integrity sha512-F2jzOuYUd1OEYXgFLjM8SNOLGXjwvinp1hMlrvR2qEpnyLk+UAdvLhhEbhDp9Iaxd27Qf/cHLu5M9ghC197yQg==
   dependencies:
-    "@clark/eslint-config" "^1.5.0"
-    "@clark/eslint-config-node-order-imports" "^1.6.1"
+    "@clark/eslint-config" "^1.8.0"
+    "@clark/eslint-config-node-order-imports" "^1.8.0"
     eslint-plugin-node "^9.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.5.0.tgz#bb04ba43e6fc8d152020cf3e89792e5c0e176e3a"
-  integrity sha512-/SvFFjuun4K5xH9ejZf7tzu2vIrew8iMP3OWWsXuac3c+lYnFzePNuHRsHxRasE7qsPPRoPWP2ijKD8s2dvFxA==
+"@clark/eslint-config@^1.5.0", "@clark/eslint-config@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.8.0.tgz#5d1c0930893e0b27332e6280924d815212eed303"
+  integrity sha512-CPDS0qhsw/342FjiOvoe35arww0Nkg1bVtF8qfBebMoIwmqnTDRDX01u2v5otwEGLkXGRBCy0KaetejtlLCGkw==
   dependencies:
     eslint-config-airbnb-base "^13.2.0"
     eslint-config-prettier "^6.0.0"
