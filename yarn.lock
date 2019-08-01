@@ -735,28 +735,28 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@clark/eslint-config-browser@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-browser/-/eslint-config-browser-1.5.0.tgz#1412ad20c02d5c64990dec31b374a52622d72b39"
-  integrity sha512-vd/6id7Ic6iBKDaMtvCRMnwxUs1Ilu4HgMzsJozzgHqmoM24NtH/eKETBRcUd/x8tvmTSQqeFTmrDdmThzfSyg==
+"@clark/eslint-config-browser@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-browser/-/eslint-config-browser-1.8.0.tgz#f61cb928778b265959231f7e17523d0be6f099d4"
+  integrity sha512-AZ+CtqShSE+hxXUAcJ27YVSwbHTT6nLXQ3AwV4ZyNyWzK0BcbDLX1P7mkg3jbWWecfRnVmkIplDUhQmyGtXrfQ==
   dependencies:
-    "@clark/eslint-config" "^1.5.0"
+    "@clark/eslint-config" "^1.8.0"
 
-"@clark/eslint-config-ember-order-imports@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember-order-imports/-/eslint-config-ember-order-imports-1.5.0.tgz#7f36612a26cb51a461c849637a3f3905b79d3af2"
-  integrity sha512-Cn6qkXTYNNU6T5p/8aQ9eeaDPDoyCjrRobHpCrbrqimIkgUpGn/ZXeHYP5aH0jvoBLNRJ5iYSqV3UtT3M+m73w==
+"@clark/eslint-config-ember-order-imports@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember-order-imports/-/eslint-config-ember-order-imports-1.8.0.tgz#8ef7195c17723ae0684124ab43940c3a9b7db31c"
+  integrity sha512-y5FopsqyB/9KhFYrLoBbI/U9qDxvyDW1oTrDF1y0/31BwXtC8U/CwHI3z053rX8cY3T/EQTpXIW5LDc7s6lizg==
   dependencies:
     eslint-plugin-import-helpers "^1.0.2"
 
-"@clark/eslint-config-ember@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember/-/eslint-config-ember-1.6.0.tgz#70e7ea2d2724a916b73c4b41c96f250d12775de7"
-  integrity sha512-JlzlVofQlgBoNvsue4WeagkMKoVcHbfyTQOwaP1u4kYFYu1h7QRkyvuIjLoZXX7PYaLBxN0WcKGdXphsVaW5HQ==
+"@clark/eslint-config-ember@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember/-/eslint-config-ember-1.8.0.tgz#0b0dc621286a3feb1a2f4150c1afd75ea2b4ee66"
+  integrity sha512-0RNXAqbpVbsCf1r6qB6Q7+6aDE1JXw5fDId06L8tvs3xR0/rVlS+FSr0C1cLRrZy3Dq+p+XFUZkwy2iUNB5hxQ==
   dependencies:
-    "@clark/eslint-config" "^1.5.0"
-    "@clark/eslint-config-browser" "^1.5.0"
-    "@clark/eslint-config-ember-order-imports" "^1.5.0"
+    "@clark/eslint-config" "^1.8.0"
+    "@clark/eslint-config-browser" "^1.8.0"
+    "@clark/eslint-config-ember-order-imports" "^1.8.0"
     eslint-plugin-ember "^6.7.1"
     eslint-plugin-ember-best-practices "^1.1.2"
     lodash.merge "^4.6.2"
@@ -778,7 +778,7 @@
     eslint-plugin-node "^9.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.5.0", "@clark/eslint-config@^1.8.0":
+"@clark/eslint-config@^1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.8.0.tgz#5d1c0930893e0b27332e6280924d815212eed303"
   integrity sha512-CPDS0qhsw/342FjiOvoe35arww0Nkg1bVtF8qfBebMoIwmqnTDRDX01u2v5otwEGLkXGRBCy0KaetejtlLCGkw==
