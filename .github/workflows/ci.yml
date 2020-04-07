@@ -37,8 +37,6 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Lint JS
         run: yarn lint:js
-      - name: Lint Types
-        run: yarn lint:types
       - name: Lint Handlebars
         run: yarn lint:hbs
       - name: Browser Tests
