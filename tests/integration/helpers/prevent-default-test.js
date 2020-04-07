@@ -1,12 +1,13 @@
-import { module, test } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
 import { render, click } from '@ember/test-helpers';
+import { setupRenderingTest } from 'ember-qunit';
+import { module, test } from 'qunit';
+
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Helper | prevent-default', function(hooks) {
+module('Integration | Helper | prevent-default', function (hooks) {
   setupRenderingTest(hooks);
 
-  hooks.beforeEach(function() {
+  hooks.beforeEach(function () {
     this.onSubmit = event => {
       // In case the submit event is not prevented, we still want to prevent the
       // actual form submission. Otherwise we accidentally abort all tests by
@@ -17,7 +18,7 @@ module('Integration | Helper | prevent-default', function(hooks) {
   });
 
   // The rest of this test suite relies on this.
-  test('a submit button works in tests and submits the form', async function(assert) {
+  test('a submit button works in tests and submits the form', async function (assert) {
     assert.expect(1);
 
     this.onSubmit = event => {
@@ -34,7 +35,7 @@ module('Integration | Helper | prevent-default', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (prevent-default)}}', async function(assert) {
+  test('{{on "click" (prevent-default)}}', async function (assert) {
     assert.expect(0);
 
     await render(hbs`
@@ -46,7 +47,7 @@ module('Integration | Helper | prevent-default', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" this.onClick}} {{on "click" (prevent-default)}}', async function(assert) {
+  test('{{on "click" this.onClick}} {{on "click" (prevent-default)}}', async function (assert) {
     assert.expect(1);
 
     this.onClick = event => assert.ok(event instanceof Event);
@@ -66,7 +67,7 @@ module('Integration | Helper | prevent-default', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (prevent-default)}} {{on "click" this.onClick}}', async function(assert) {
+  test('{{on "click" (prevent-default)}} {{on "click" this.onClick}}', async function (assert) {
     assert.expect(1);
 
     this.onClick = event => assert.ok(event instanceof Event);
@@ -86,7 +87,7 @@ module('Integration | Helper | prevent-default', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (prevent-default this.onClick)}}', async function(assert) {
+  test('{{on "click" (prevent-default this.onClick)}}', async function (assert) {
     assert.expect(1);
 
     this.onClick = event => assert.ok(event instanceof Event);

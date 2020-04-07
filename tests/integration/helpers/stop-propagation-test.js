@@ -1,19 +1,20 @@
-import { module, test } from 'qunit';
-import { setupRenderingTest } from 'ember-qunit';
 import { render, click } from '@ember/test-helpers';
+import { setupRenderingTest } from 'ember-qunit';
+import { module, test } from 'qunit';
+
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Helper | stop-propagation', function(hooks) {
+module('Integration | Helper | stop-propagation', function (hooks) {
   setupRenderingTest(hooks);
 
-  hooks.beforeEach(function() {
+  hooks.beforeEach(function () {
     this.onAncestorClick = () => {
       throw new Error(`Uncaught 'click' event.`);
     };
   });
 
   // The rest of this test suite relies on this.
-  test('a click event propagates up the DOM by default', async function(assert) {
+  test('a click event propagates up the DOM by default', async function (assert) {
     assert.expect(1);
 
     this.onAncestorClick = () => {
@@ -29,7 +30,7 @@ module('Integration | Helper | stop-propagation', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (stop-propagation)}}', async function(assert) {
+  test('{{on "click" (stop-propagation)}}', async function (assert) {
     assert.expect(0);
 
     await render(hbs`
@@ -41,7 +42,7 @@ module('Integration | Helper | stop-propagation', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (stop-propagation) capture=true}}', async function(assert) {
+  test('{{on "click" (stop-propagation) capture=true}}', async function (assert) {
     this.outerListener = () => assert.step('outer');
     this.innerListener = () => assert.step('inner');
 
@@ -56,7 +57,7 @@ module('Integration | Helper | stop-propagation', function(hooks) {
     assert.verifySteps(['outer'], 'it only runs the outer listener');
   });
 
-  test('{{on "click" this.onClick}} {{on "click" (stop-propagation)}}', async function(assert) {
+  test('{{on "click" this.onClick}} {{on "click" (stop-propagation)}}', async function (assert) {
     assert.expect(1);
 
     this.onClick = event => assert.ok(event instanceof Event);
@@ -75,7 +76,7 @@ module('Integration | Helper | stop-propagation', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (stop-propagation)}} {{on "click" this.onClick}}', async function(assert) {
+  test('{{on "click" (stop-propagation)}} {{on "click" this.onClick}}', async function (assert) {
     assert.expect(1);
 
     this.onClick = event => assert.ok(event instanceof Event);
@@ -94,7 +95,7 @@ module('Integration | Helper | stop-propagation', function(hooks) {
     await click('button');
   });
 
-  test('{{on "click" (stop-propagation this.onClick)}}', async function(assert) {
+  test('{{on "click" (stop-propagation this.onClick)}}', async function (assert) {
     assert.expect(1);
 
     this.onClick = event => assert.ok(event instanceof Event);

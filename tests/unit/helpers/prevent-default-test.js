@@ -1,8 +1,9 @@
-import { preventDefault } from 'ember-event-helpers/helpers/prevent-default';
 import { module, test } from 'qunit';
 
-module('Unit | Helper | prevent-default', function() {
-  test('it throws an assertion, when used incorrectly', function(assert) {
+import { preventDefault } from 'ember-event-helpers/helpers/prevent-default';
+
+module('Unit | Helper | prevent-default', function () {
+  test('it throws an assertion, when used incorrectly', function (assert) {
     assert.expectAssertion(() => {
       preventDefault(['not a function']);
     }, `Expected 'not a function' to be a function, if present.`);
@@ -16,21 +17,21 @@ module('Unit | Helper | prevent-default', function() {
     }, `Expected '[object Object]' to be an Event and have a 'preventDefault' method.`);
   });
 
-  test('it works without a handler', function(assert) {
+  test('it works without a handler', function (assert) {
     assert.expect(1);
     preventDefault([])({
       preventDefault: () => assert.ok(true, `it has called 'preventDefault'`)
     });
   });
 
-  test('it works with a handler', function(assert) {
+  test('it works with a handler', function (assert) {
     assert.expect(2);
     preventDefault([() => assert.ok(true, 'it has called the handler')])({
       preventDefault: () => assert.ok(true, `it has called 'preventDefault'`)
     });
   });
 
-  test(`it calls 'preventDefault', even if the handler throws`, function(assert) {
+  test(`it calls 'preventDefault', even if the handler throws`, function (assert) {
     assert.expect(2);
     assert.throws(
       () =>

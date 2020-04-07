@@ -7,7 +7,7 @@ export function stopPropagation([handler]) {
     !handler || typeof handler === 'function'
   );
 
-  return function(event) {
+  return function (event) {
     assert(
       `Expected '${event}' to be an Event and have a 'stopPropagation' method.`,
       event && typeof event.stopPropagation === 'function'
