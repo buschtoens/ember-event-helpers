@@ -1,6 +1,6 @@
 # ember-event-helpers
 
-[![Build Status](https://travis-ci.org/buschtoens/ember-event-helpers.svg)](https://travis-ci.org/buschtoens/ember-event-helpers)
+[![CI](https://github.com/buschtoens/ember-event-helpers/workflows/CI/badge.svg)](https://github.com/buschtoens/ember-event-helpers/actions)
 [![npm version](https://badge.fury.io/js/ember-event-helpers.svg)](http://badge.fury.io/js/ember-event-helpers)
 [![Download Total](https://img.shields.io/npm/dt/ember-event-helpers.svg)](http://badge.fury.io/js/ember-event-helpers)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-event-helpers.svg)](https://emberobserver.com/addons/ember-event-helpers)
@@ -38,7 +38,7 @@ ember install ember-on-modifier
 ## Usage
 
 | Template Helper                                                      | `Event` method                                           |
-| -------------------------------------------------------------------- | -------------------------------------------------------- |
+|----------------------------------------------------------------------|----------------------------------------------------------|
 | **[`(prevent-default fn)`](#prevent-default)**                       | [`event.preventDefault()`][e-preventdefault]             |
 | **[`(stop-propagation fn`](#stop-propagation)**                      | [`event.stopPropagation()`][e-stoppropagation]           |
 | **[`(stop-immediate-propagation fn)`](#stop-immediate-propagation)** | [`stopImmediatePropagation`][e-stopimmediatepropagation] |
