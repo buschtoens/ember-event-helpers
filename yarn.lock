@@ -2863,6 +2863,14 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
+  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 chardet@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
@@ -3946,20 +3954,20 @@ ember-source@~3.17.3:
     semver "^6.1.1"
     silent-error "^1.1.1"
 
-ember-template-lint@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-2.4.1.tgz#c388ea9d7112621c308967033f2e197ec199ebaa"
-  integrity sha512-qDTvfL9kNGFqr3DJKfRW9WSAp/jtGdl74mqEf/C6aq/m5n+oIwYTXEvG38UwnA310GWWToyt6yutLoQzRgX+HQ==
+ember-template-lint@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-2.5.0.tgz#784fe69f6740600cd107c6fd535e1edba363feb4"
+  integrity sha512-fs9Mx9+XQSQ6zA5qrHRJTGnZzVLCj9PlHw9KU2+pk1hJGYOCT7Kl8MeSXE308mjSs7gMv86inb5km9k6Khmtfw==
   dependencies:
-    chalk "^3.0.0"
-    ember-template-recast "^4.1.1"
+    chalk "^4.0.0"
+    ember-template-recast "^4.1.2"
     find-up "^4.1.0"
     globby "^11.0.0"
     micromatch "^4.0.2"
     resolve "^1.15.1"
     yargs "^15.3.1"
 
-ember-template-recast@^4.1.1:
+ember-template-recast@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/ember-template-recast/-/ember-template-recast-4.1.2.tgz#1999c49df482a042fe3ad02712d62b6d3566addd"
   integrity sha512-ySBuPVKnGPvJ+y+5MEZ7qHE1p2LunM2CV9RUES0CP4O+fksPNwl79HPV+8rL0gJvN2nUOfkatNF6pcWNxxXaxg==
