@@ -861,17 +861,17 @@
   dependencies:
     eslint-plugin-import-helpers "^1.0.2"
 
-"@clark/eslint-config-node@^1.18.0":
-  version "1.24.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.24.1.tgz#4e16e6a281c77139b30eb9fe78ff98474080fc06"
-  integrity sha512-gzcQmue7nYsG2wV3nwuzx70j+DUrF8FqqVsItEVWd0/1KyB/seziBqtsE5MTfDFf+Kl9+CblYoGT4/4v2iMFRg==
+"@clark/eslint-config-node@^1.24.4":
+  version "1.24.4"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.24.4.tgz#6b08b20f6d93a75e61960c40b7a86cdf72a77bea"
+  integrity sha512-F7pjOCMRR/LVOhDNvXZJt2M+SgOmg9SUIbvQnCDPnfm1Dfxuzj/30Iyp0o3eCraUXUA/rrOLqjpMLpxQ5EOg5Q==
   dependencies:
-    "@clark/eslint-config" "^1.24.1"
+    "@clark/eslint-config" "^1.24.4"
     "@clark/eslint-config-node-order-imports" "^1.19.0"
     eslint-plugin-node "^11.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.24.1", "@clark/eslint-config@^1.24.4":
+"@clark/eslint-config@^1.24.4":
   version "1.24.4"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.24.4.tgz#a178f3c4ad5528c594ebc36de647e519223a709d"
   integrity sha512-khC7bJ8NWhA96JQuhMaHOQOOqGcMKwv5RPVhkvMY2toRjwqV1nmnhu8J1EQiSOQffrgaPnuE1MZh/P4w3weSaA==
