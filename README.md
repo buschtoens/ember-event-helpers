@@ -42,13 +42,13 @@ ember install ember-on-modifier
 | **[`(prevent-default fn)`](#prevent-default)**                       | [`event.preventDefault()`][e-preventdefault]             |
 | **[`(stop-propagation fn`](#stop-propagation)**                      | [`event.stopPropagation()`][e-stoppropagation]           |
 | **[`(stop-immediate-propagation fn)`](#stop-immediate-propagation)** | [`stopImmediatePropagation`][e-stopimmediatepropagation] |
-| **[`(target-value fn)`](#target-value)**                       | [`event.target.value`][e-targetvalue]             |
+| **[`(target-value fn)`](#target-value)**                       | [`event.target.value`][e-target]             |
 
 [e-preventdefault]: https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 [e-stoppropagation]: https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
 [e-stopimmediatepropagation]:
 https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation
-[e-targetvalue]: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+[e-target]: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
 > 👉 For usage information on `{{on}}` itself, refer to the [RFC][rfc] or
 > [polyfill documentation][ember-on-modifier].
@@ -260,7 +260,7 @@ listener is not called. The `.outer` listener is also not called.
 
 #### `(target-value)`
 
-Accesses [`event.target.value`][e-target.value] and passes it on.
+Accesses [`event.target.value`][e-target] and passes it on.
 
 ```hbs
 <input type="text" {{on "input" (target-value this.processValue)}}>
