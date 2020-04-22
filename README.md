@@ -42,10 +42,13 @@ ember install ember-on-modifier
 | **[`(prevent-default fn)`](#prevent-default)**                       | [`event.preventDefault()`][e-preventdefault]             |
 | **[`(stop-propagation fn`](#stop-propagation)**                      | [`event.stopPropagation()`][e-stoppropagation]           |
 | **[`(stop-immediate-propagation fn)`](#stop-immediate-propagation)** | [`stopImmediatePropagation`][e-stopimmediatepropagation] |
+| **[`(target-value fn)`](#target-value)**                       | [`event.target.value`][e-targetvalue]             |
 
 [e-preventdefault]: https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 [e-stoppropagation]: https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
-[e-stopimmediatepropagation]: https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation
+[e-stopimmediatepropagation]:
+https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation
+[e-targetvalue]: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
 > 👉 For usage information on `{{on}}` itself, refer to the [RFC][rfc] or
 > [polyfill documentation][ember-on-modifier].
@@ -254,6 +257,26 @@ inner A
 
 Since the first listener uses `(stop-immediate-propagation)`, the second
 listener is not called. The `.outer` listener is also not called.
+
+#### `(target-value)`
+
+Accesses [`event.target.value`][e-target.value] and passes it on.
+
+```hbs
+<input type="text" {{on "input" (target-value this.processValue)}}>
+```
+
+```ts
+import Component from '@ember/component';
+import { action } from '@ember/object';
+
+export default class BubbleGumComponent extends Component {
+  @action
+  processValue(value: string) {
+    console.log('here is our value', value);
+  }
+}
+```
 
 ### Currying / Partial Application
 
