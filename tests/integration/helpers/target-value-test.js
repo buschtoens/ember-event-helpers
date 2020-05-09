@@ -28,4 +28,16 @@ module('Integration | Helper | target-value', function (hooks) {
 
     await fillIn('[data-test-input]', 42);
   });
+
+  test('send empty value', async function (assert) {
+    this.update = value => {
+      assert.equal(value, '');
+    };
+
+    await render(
+      hbs`<input value="42" {{on "input" (target-value this.update)}} data-test-input>`
+    );
+
+    await fillIn('[data-test-input]', '');
+  });
 });

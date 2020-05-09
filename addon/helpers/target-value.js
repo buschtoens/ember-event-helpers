@@ -10,7 +10,7 @@ export function targetValue([handler]) {
   return function (event) {
     assert(
       `Expected '${event}' to have a 'target' with a 'value' on it.`,
-      event && event.target && event.target.value
+      event && event.target && event.target.value !== undefined
     );
 
     if (handler) handler(event.target.value);
