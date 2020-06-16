@@ -1039,24 +1039,24 @@
     eslint-plugin-qunit "^4.2.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config-node-order-imports@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.19.0.tgz#2fb3d7a3f1c4df6db6c21733722c3c10e684aec3"
-  integrity sha512-tjwKHT/J9pgTqJIYCXZM0yDJ5yCmpNKhOHIgb0s0gwdMrq+TAn5kx9QTrKR53tqaXBBlxohoVV3dz5dp9RW8bQ==
+"@clark/eslint-config-node-order-imports@^1.25.2":
+  version "1.25.2"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.25.2.tgz#95bb3949b792702acff31b43a0eb4ae43473fe5a"
+  integrity sha512-Tj4WIvmm/+a6KFpkqrViD/E96fbXW3iVRW/ieBQA8GjXcnQOna5InT90JYHHDEALgPcfYCI16eRPUzQJCqggSg==
   dependencies:
     eslint-plugin-import-helpers "^1.0.2"
 
-"@clark/eslint-config-node@^1.24.4":
-  version "1.24.4"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.24.4.tgz#6b08b20f6d93a75e61960c40b7a86cdf72a77bea"
-  integrity sha512-F7pjOCMRR/LVOhDNvXZJt2M+SgOmg9SUIbvQnCDPnfm1Dfxuzj/30Iyp0o3eCraUXUA/rrOLqjpMLpxQ5EOg5Q==
+"@clark/eslint-config-node@^1.25.2":
+  version "1.25.2"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.25.2.tgz#ce8f9c9de797c9b90cae217ba11bd1c7ec5061c2"
+  integrity sha512-W7VyPndduGvB+zo68BMOc243tSZOzT8sXksjh/CmgwP8pwGEZdOM9Z7TXNvVALpPdyJqbnKsJ3uXygV2iWmFBw==
   dependencies:
-    "@clark/eslint-config" "^1.24.4"
-    "@clark/eslint-config-node-order-imports" "^1.19.0"
+    "@clark/eslint-config" "^1.25.2"
+    "@clark/eslint-config-node-order-imports" "^1.25.2"
     eslint-plugin-node "^11.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.24.4", "@clark/eslint-config@^1.25.2":
+"@clark/eslint-config@^1.25.2":
   version "1.25.2"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.25.2.tgz#dc6ca88a2ec711ecf6a61f6957b047752c1b2128"
   integrity sha512-qBByAfTb3XWOdbTBoo9qm0I89u4yydXvRN02A5l8G9jIVbyHfrEB8f/+wyXwDu381OKmrFO80yAbNn9XWzLkrg==
