@@ -1039,24 +1039,24 @@
     eslint-plugin-qunit "^4.2.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config-node-order-imports@^1.25.2":
-  version "1.25.2"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.25.2.tgz#95bb3949b792702acff31b43a0eb4ae43473fe5a"
-  integrity sha512-Tj4WIvmm/+a6KFpkqrViD/E96fbXW3iVRW/ieBQA8GjXcnQOna5InT90JYHHDEALgPcfYCI16eRPUzQJCqggSg==
+"@clark/eslint-config-node-order-imports@^1.25.5":
+  version "1.25.5"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.25.5.tgz#26d82e195041f0954f92ece94980d0d7c63d34fb"
+  integrity sha512-2flkcPeN2jbv95LykWvhmuuy7Gb5EGRTQIn73cZI28GmEuSlgPU1pT+XixYLnrRpKbCPdN/W6Hb7zyw7i8Dl1g==
   dependencies:
     eslint-plugin-import-helpers "^1.0.2"
 
-"@clark/eslint-config-node@^1.25.2":
-  version "1.25.2"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.25.2.tgz#ce8f9c9de797c9b90cae217ba11bd1c7ec5061c2"
-  integrity sha512-W7VyPndduGvB+zo68BMOc243tSZOzT8sXksjh/CmgwP8pwGEZdOM9Z7TXNvVALpPdyJqbnKsJ3uXygV2iWmFBw==
+"@clark/eslint-config-node@^1.25.5":
+  version "1.25.5"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.25.5.tgz#a40e19e5be3ebd788cc10f1ccc6e55c8f6127103"
+  integrity sha512-Qj4nrdnFFxoLwq2E49ZkykUQlAau50adjouTcU36m1eAcax2wJhCqyenliHkYEgF9YhWzcZAehy7xRgiBHyfMw==
   dependencies:
-    "@clark/eslint-config" "^1.25.2"
-    "@clark/eslint-config-node-order-imports" "^1.25.2"
+    "@clark/eslint-config" "^1.25.5"
+    "@clark/eslint-config-node-order-imports" "^1.25.5"
     eslint-plugin-node "^11.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.25.2", "@clark/eslint-config@^1.25.5":
+"@clark/eslint-config@^1.25.5":
   version "1.25.5"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.25.5.tgz#52e68393855aa701fffd2d055030ec1216291527"
   integrity sha512-SoInrrbrO1g2VjNBhseKoB9m3DXWdD9CxP8aZ/qfRLQYBDFDjQ9xqQLz7AJG0JzbPAfkansrbliFCWqydwyosA==
