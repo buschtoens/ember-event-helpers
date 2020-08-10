@@ -272,7 +272,7 @@ so using the [`{{fn}}` helper][fn-helper]:
 
 ### Combining Helpers
 
-You can nest the helpers:
+You can nest the helpers (recommended):
 
 ```hbs
 <button {{on "click" (prevent-default (stop-propagation this.onClick))}}>
@@ -288,6 +288,38 @@ Or register additional "void" helpers, since the `fn` argument is optional:
   {{on "click" (stop-propagation)}}
   {{on "click" this.onClick))}}
 >
+  Click me
+</button>
+```
+
+Alternatively you could even use [`(queue)` from `ember-composable-helpers`][queue].
+
+[queue]: https://github.com/DockYard/ember-composable-helpers#queue
+
+```hbs
+<button {{on "click" (queue (prevent-default) (stop-propagation) this.onClick)}}>
+  Click me
+</button>
+```
+
+### Getting the `event.target.value`
+
+With the `{{action}}` modifier / helper, you used to be able to conveniently access
+`event.target.value` (or any other property thereof), like so:
+
+```hbs
+<button onclick={{action this.onClick value="target.value"}}>
+  Click me
+</button>
+```
+
+You can still easily do this with [`(pick)` from `ember-composable-helpers`][pick].
+
+[pick]: https://github.com/DockYard/ember-composable-helpers#pick
+
+
+```hbs
+<button {{on "click" (pick "target.value" this.onClick)}}>
   Click me
 </button>
 ```
