@@ -40,7 +40,7 @@ ember install ember-on-modifier
 | Template Helper                                                      | `Event` method                                           |
 |----------------------------------------------------------------------|----------------------------------------------------------|
 | **[`(prevent-default fn)`](#prevent-default)**                       | [`event.preventDefault()`][e-preventdefault]             |
-| **[`(stop-propagation fn`](#stop-propagation)**                      | [`event.stopPropagation()`][e-stoppropagation]           |
+| **[`(stop-propagation fn)`](#stop-propagation)**                      | [`event.stopPropagation()`][e-stoppropagation]           |
 | **[`(stop-immediate-propagation fn)`](#stop-immediate-propagation)** | [`stopImmediatePropagation`][e-stopimmediatepropagation] |
 
 [e-preventdefault]: https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
