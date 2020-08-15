@@ -1114,24 +1114,24 @@
     eslint-plugin-qunit "^4.3.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config-node-order-imports@^1.28.0":
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.28.0.tgz#dbc09119956b97829800a69e7139e27e27448161"
-  integrity sha512-/6jx3F5PdKMcJmVafjgMuY4SU0NAjGYTNcvb8u0T7ho9uIM2uSzl2C3gSsZ8JhUI9B4256hza0EXLL04w/9bvA==
+"@clark/eslint-config-node-order-imports@^1.28.1":
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node-order-imports/-/eslint-config-node-order-imports-1.28.1.tgz#de6ca38eb35d7e393137517ef134a218e9a31501"
+  integrity sha512-2wZ8L1B/XUqRm3AfbC3D2GzrWm1QCDh3G+SXaXrIe44H3MbLUBuWtHRmQj+Id8EweAMgbcsp4k1iT5mEtQwrdw==
   dependencies:
     eslint-plugin-import-helpers "^1.1.0"
 
-"@clark/eslint-config-node@^1.28.0":
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.28.0.tgz#57328a3661f1e864638c2e60759a2fca1a045072"
-  integrity sha512-eDsHN4dr6ikQA5t5W65cJ8GlKTXnNs0LSuR2SV20I16PfZszuEEPIqUP9TyFRFPfEEAStJagpRH1ufVB0QiF/w==
+"@clark/eslint-config-node@^1.28.1":
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.28.1.tgz#d3e7d3a0d752788e252916a02f824f7f61e98f41"
+  integrity sha512-d96OdTVkKyzXpIsPJLlc0qQSmWU8ZxiVAZPDgfEH0UDLwB1eHlB+ICkxhzkMIjfJLH0enHABGIWm9KQU02qQSg==
   dependencies:
-    "@clark/eslint-config" "^1.28.0"
-    "@clark/eslint-config-node-order-imports" "^1.28.0"
+    "@clark/eslint-config" "^1.28.1"
+    "@clark/eslint-config-node-order-imports" "^1.28.1"
     eslint-plugin-node "^11.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.28.0", "@clark/eslint-config@^1.28.1":
+"@clark/eslint-config@^1.28.1":
   version "1.28.1"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.28.1.tgz#e1eea48221b38d6ce88399f9f6cfe43fe6ef89dd"
   integrity sha512-rUtqnwR9kHrPJNPGwQAAXobjiE6IYhwl9vtF4zfgp1xnyvoGy7vMurzRyfRK0ug3PiLh9mydX3/nSse2RwkBhg==
