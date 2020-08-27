@@ -1121,22 +1121,22 @@
   dependencies:
     eslint-plugin-import-helpers "^1.1.0"
 
-"@clark/eslint-config-node@^1.28.1":
-  version "1.28.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.28.1.tgz#d3e7d3a0d752788e252916a02f824f7f61e98f41"
-  integrity sha512-d96OdTVkKyzXpIsPJLlc0qQSmWU8ZxiVAZPDgfEH0UDLwB1eHlB+ICkxhzkMIjfJLH0enHABGIWm9KQU02qQSg==
+"@clark/eslint-config-node@^1.28.2":
+  version "1.28.2"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.28.2.tgz#10e4371b6018d070e80769b4c42cd024e9062c8b"
+  integrity sha512-aie6wN1t4CMmLK4aFaECMLfCTEW0C6Ur77IOHD8l5VTAzbBWtclljMbmvGrxqy/7C5r+1Kgz0NghaVcLcgtPFg==
   dependencies:
-    "@clark/eslint-config" "^1.28.1"
+    "@clark/eslint-config" "^1.28.2"
     "@clark/eslint-config-node-order-imports" "^1.28.1"
     eslint-plugin-node "^11.1.0"
     lodash.merge "^4.6.2"
 
-"@clark/eslint-config@^1.28.1":
-  version "1.28.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.28.1.tgz#e1eea48221b38d6ce88399f9f6cfe43fe6ef89dd"
-  integrity sha512-rUtqnwR9kHrPJNPGwQAAXobjiE6IYhwl9vtF4zfgp1xnyvoGy7vMurzRyfRK0ug3PiLh9mydX3/nSse2RwkBhg==
+"@clark/eslint-config@^1.28.1", "@clark/eslint-config@^1.28.2":
+  version "1.28.2"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.28.2.tgz#2df2ad7d098ce762fb4ee397aa3052a10734e494"
+  integrity sha512-9gcDraHs+WJfqW4LpHi3SGkLthfUu3qV4/SscwrSLhUw/ieTKPHzzpsOomBV3PXWDI9vD4ne4GCfATZuXQD/Vg==
   dependencies:
-    "@clark/prettier-config" "^1.28.1"
+    "@clark/prettier-config" "^1.28.2"
     eslint-config-airbnb-base "^14.2.0"
     eslint-config-prettier "^6.11.0"
     eslint-config-xo-space "^0.25.0"
@@ -1144,7 +1144,7 @@
     eslint-plugin-node "^11.1.0"
     eslint-plugin-prettier "^3.1.4"
     eslint-plugin-unicorn "^21.0.0"
-    prettier "^2.0.5"
+    prettier "^2.1.1"
 
 "@clark/eslint-plugin-import-helpers-with-package@^1.28.1":
   version "1.28.1"
@@ -1162,10 +1162,10 @@
     find-up "^5.0.0"
     type-fest "^0.16.0"
 
-"@clark/prettier-config@^1.28.1":
-  version "1.28.1"
-  resolved "https://registry.yarnpkg.com/@clark/prettier-config/-/prettier-config-1.28.1.tgz#8533bebd59cf576da33fdbfb9405974e4a1ccc70"
-  integrity sha512-+6Op0bV1+hh3dswrDviO4btTo2U5+w8NzZi/WQCSa5Dow+piVKPajjNXUUJAkw6pSYMZy1oyeek2ijGcBPKfdw==
+"@clark/prettier-config@^1.28.2":
+  version "1.28.2"
+  resolved "https://registry.yarnpkg.com/@clark/prettier-config/-/prettier-config-1.28.2.tgz#76e476c62e5cdf782460881370ea8b7b5e691a65"
+  integrity sha512-1xmaaTK95gsQgwR1mPXxRKKagPQ+gc1zDdKbNswSv5jAjrVSXT8ITRFwR32NY05Ru+yKERJDYGk5fJ01iYIujw==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -7648,10 +7648,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
+prettier@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.1.tgz#d9485dd5e499daa6cb547023b87a6cf51bee37d6"
+  integrity sha512-9bY+5ZWCfqj3ghYBLxApy2zf6m+NJo5GzmLTpr9FsApsfjriNnS2dahWReHMi7qNPhhHl9SYHJs2cHZLgexNIw==
 
 printf@^0.5.1:
   version "0.5.3"
