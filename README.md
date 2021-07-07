@@ -37,18 +37,29 @@ ember install ember-on-modifier
 
 ## Usage
 
+- **[Template Helpers](#template-helpers)**
+  - [`(prevent-default fn)`](#prevent-default)
+  - [`(stop-propagation fn)`](#stop-propagation)
+  - [`(stop-immediate-propagation fn)`](#stop-immediate-propagation)
+- **[Tips & Tricks](#tips--tricks)**
+  - [Currying / Partial Application](#currying--partial-application)
+  - [Combining Helpers](#combining-helpers)
+  - [Getting the `event.target.value`](#getting-the-eventtargetvalue)
+
+> 👉 For usage information on `{{on}}` itself, refer to the [RFC][rfc] or
+> [polyfill documentation][ember-on-modifier].
+
+### Template Helpers
+
 | Template Helper                                                      | `Event` method                                           |
 |----------------------------------------------------------------------|----------------------------------------------------------|
 | **[`(prevent-default fn)`](#prevent-default)**                       | [`event.preventDefault()`][e-preventdefault]             |
-| **[`(stop-propagation fn)`](#stop-propagation)**                      | [`event.stopPropagation()`][e-stoppropagation]           |
+| **[`(stop-propagation fn)`](#stop-propagation)**                     | [`event.stopPropagation()`][e-stoppropagation]           |
 | **[`(stop-immediate-propagation fn)`](#stop-immediate-propagation)** | [`stopImmediatePropagation`][e-stopimmediatepropagation] |
 
 [e-preventdefault]: https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 [e-stoppropagation]: https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
 [e-stopimmediatepropagation]: https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation
-
-> 👉 For usage information on `{{on}}` itself, refer to the [RFC][rfc] or
-> [polyfill documentation][ember-on-modifier].
 
 All three template helpers return a function that, when invoked, will call the
 associated `Event` method on the first argument. The helper themselves also take
@@ -57,8 +68,6 @@ afterwards with all input arguments of the returned function. The return value
 of `fn` is passed through.
 
 Sounds complicated? Let's see some examples instead! 😅
-
-### Template Helpers
 
 #### `(prevent-default)`
 
@@ -255,7 +264,9 @@ inner A
 Since the first listener uses `(stop-immediate-propagation)`, the second
 listener is not called. The `.outer` listener is also not called.
 
-### Currying / Partial Application
+### Tips & Tricks
+
+#### Currying / Partial Application
 
 If you want to curry the function call / partially apply arguments, you can do
 so using the [`{{fn}}` helper][fn-helper]:
@@ -270,7 +281,7 @@ so using the [`{{fn}}` helper][fn-helper]:
 {{/each}}
 ```
 
-### Combining Helpers
+#### Combining Helpers
 
 You can nest the helpers (recommended):
 
@@ -302,7 +313,7 @@ Alternatively you could even use [`(queue)` from `ember-composable-helpers`][que
 </button>
 ```
 
-### Getting the `event.target.value`
+#### Getting the `event.target.value`
 
 With the `{{action}}` modifier / helper, you used to be able to conveniently access
 `event.target.value` (or any other property thereof), like so:
@@ -316,7 +327,6 @@ With the `{{action}}` modifier / helper, you used to be able to conveniently acc
 You can still easily do this with [`(pick)` from `ember-composable-helpers`][pick].
 
 [pick]: https://github.com/DockYard/ember-composable-helpers#pick
-
 
 ```hbs
 <button {{on "click" (pick "target.value" this.onClick)}}>
