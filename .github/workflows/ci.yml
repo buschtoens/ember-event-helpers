@@ -5,6 +5,7 @@ name: CI
 
 # These trigger patterns courtesy of https://github.com/broccolijs/broccoli/pull/436
 on:
+  workflow_dispatch:
   pull_request:
   push:
     # filtering branches here prevents duplicate builds from pull_request and push
