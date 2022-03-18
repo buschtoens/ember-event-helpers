@@ -70,6 +70,7 @@ jobs:
           - ember-release
           - ember-beta
           - ember-canary
+      fail-fast: false
     steps:
       - name: Checkout Code
         uses: actions/checkout@v1
