@@ -28,11 +28,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 12
+          cache: 'yarn'
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
       - name: Lint JS
@@ -47,9 +48,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 10
       - name: Install Dependencies
@@ -73,11 +74,12 @@ jobs:
       fail-fast: false
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 12
+          cache: 'yarn'
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
       - name: Try Scenario
